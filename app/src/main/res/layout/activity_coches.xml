@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Coches">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLTOP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLEND"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLIZQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLDRC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <CheckBox
+        android:id="@+id/cbC1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coche1"
+        app:layout_constraintBottom_toTopOf="@id/cbC2"
+        app:layout_constraintEnd_toStartOf="@id/GLDRC"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toEndOf="@id/GLIZQ"
+        app:layout_constraintTop_toBottomOf="@id/GLTOP" />
+
+    <CheckBox
+        android:id="@+id/cbC2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="168dp"
+        android:text="@string/coche2"
+        app:layout_constraintStart_toEndOf="@id/GLIZQ"
+        app:layout_constraintEnd_toStartOf="@id/GLDRC"
+        app:layout_constraintTop_toBottomOf="@id/cbC1"
+
+        />
+
+    <CheckBox
+        android:id="@+id/cbC3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coche3"
+        app:layout_constraintStart_toEndOf="@id/GLIZQ"
+        app:layout_constraintEnd_toStartOf="@id/GLDRC"
+        app:layout_constraintTop_toBottomOf="@id/cbC2"/>
+
+    <CheckBox
+        android:id="@+id/cbM1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moto1"
+        app:layout_constraintStart_toEndOf="@id/GLIZQ"
+        app:layout_constraintEnd_toStartOf="@id/GLDRC"
+        app:layout_constraintTop_toBottomOf="@id/cbC3"/>
+
+    <CheckBox
+        android:id="@+id/cbM2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moto2"
+        app:layout_constraintStart_toEndOf="@id/GLIZQ"
+        app:layout_constraintEnd_toStartOf="@id/GLDRC"
+        app:layout_constraintTop_toBottomOf="@id/cbM1"/>
+
+    <CheckBox
+        android:id="@+id/cbM3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moto3"
+        app:layout_constraintStart_toEndOf="@id/GLIZQ"
+        app:layout_constraintEnd_toStartOf="@id/GLDRC"
+        app:layout_constraintTop_toBottomOf="@id/cbM2"/>
+
+    <Button
+        android:id="@+id/bComprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="compra"
+        app:layout_constraintEnd_toStartOf="@id/GLDRC"
+        app:layout_constraintStart_toEndOf="@id/GLIZQ"
+        app:layout_constraintTop_toBottomOf="@id/cbM3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

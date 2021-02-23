@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLTOP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLEND"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLIZQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLDRC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+    <Button
+        android:id="@+id/Bdatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/datos"
+        android:layout_marginTop="200dp"
+        app:layout_constraintStart_toEndOf="@id/GLIZQ"
+        app:layout_constraintEnd_toStartOf="@id/GLDRC"
+        app:layout_constraintTop_toBottomOf="@id/GLTOP"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="210dp"
+      />
+
+    <Button
+        android:id="@+id/BCoches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ChochesMotos"
+        android:layout_marginTop="200dp"
+        app:layout_constraintStart_toEndOf="@id/GLIZQ"
+        app:layout_constraintEnd_toStartOf="@id/GLDRC"
+        app:layout_constraintTop_toBottomOf="@id/Bdatos"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="210dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

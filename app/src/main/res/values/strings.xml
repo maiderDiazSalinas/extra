@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">extra</string>
+    <string name="datos">DATOS</string>
+    <string name="coches">COCHES</string>
+    <string name="TXTnombre">Nombre</string>
+    <string name="apellidos">APELLIDOS</string>
+    <string name="txtapellidos">TXTApellidos</string>
+    <string name="edad">EDAD</string>
+    <string name="annadir">AÑADIR</string>
+    <string name="NOMBRE">NOMBRE</string>
+    <string name="ChochesMotos">coches</string>
+    <string name="coche1">coche1</string>
+    <string name="coche2">coche2</string>
+    <string name="coche3">Coche3</string>
+    <string name="moto1">Moto1</string>
+    <string name="moto2">Moto2</string>
+    <string name="moto3">Moto3</string>
+    <string name="button">Button</string>
+
+</resources>
